@@ -12,7 +12,7 @@ function App() {
           className='App-logo'
           alt='logo'
         />
-        <p>Deploy to GitHub Pages</p>
+        <p>Deploy to hhh GitHub Pages</p>
         <p>
           <button type='button' onClick={() => setCount((count) => count + 1)}>
             count is: {count}
