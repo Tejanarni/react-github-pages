@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png'
+          src='https://expocontech.com/images/expocon_logo.png'
           className='App-logo'
           alt='logo'
         />
