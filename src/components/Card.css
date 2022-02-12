@@ -1,0 +1,7 @@
+.card{
+    border-radius: 12px;
+    background-color: rgb(19, 15, 236);
+    color: yellow;
+    border: 4px solid #51fb03;
+    box-shadow: 0 3px 10px rosybrown;
+}
