@@ -25,12 +25,12 @@ jobs:
       - name: Install NPM Dependencies
         run: npm i
       - name: Build Project
-        run: CI='' npm run build
+        run: npm run build
       - name: Upload artifact in order to deploy
         uses: actions/upload-artifact@v2
         with:
-          name: public
-          path: public
+          name: production-files
+          path: ./dist
   # Deploy Job
   deploy:
     name: Deploy
@@ -41,10 +41,10 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: public
-          path: public
+          name: production-files
+          path: ./dist
       - name: Deploy to gh pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
-          publish_dir: public
+          publish_dir: ./dist
